@@ -1,0 +1,148 @@
+@import "../../../assets/theme/_var.scss";
+
+.container_wrap {
+  background: url(../../../assets/images/bg_home_new.jpg) top center no-repeat;
+  background-size: cover;
+
+  .form-wrapper-style {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 1165px;
+  }
+}
+.farm_header_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.staked_btn_style {
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+    padding: 0;
+    color: #fff;
+    font-family: $secondaryFont;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+.activeInactive_buttonStyle {
+  margin-left: 20px;
+  display: flex;
+  background-color: $swapStepbg;
+  border-radius: 25px;
+  overflow: hidden;
+  li {
+    a {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 16px;
+      font-family: $secondaryFont;
+      color: $secondaryColor;
+      transition: all 0.25s;
+
+      &:hover {
+        background-color: $secondaryColor;
+        color: $baseColor;
+      }
+    }
+  }
+}
+
+.farm_card_columns {
+  width: 33.3334%;
+  flex-basis: auto;
+  flex: 0 0 33.3334%;
+  margin-bottom: 25px;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+.activeInactive_buttonStyle {
+  .active {
+    background-color: #e3d32d;
+    color: black !important;
+  }
+}
+.stakemodel {
+  max-width: 600px !important;
+  .stakemodel_box {
+    padding: 0 20px 20px 20px;
+    p {
+      font-size: 14px;
+      float: right;
+      margin-bottom: 20px;
+    }
+    .stakemodelIn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 15px;
+      background-color: #1c3d5a;
+      border-radius: 20px;
+      margin: 30px 0;
+      @media (max-width:991px){
+        flex-direction: column;
+      }
+      input {
+        background: transparent;
+        border: 0px !important;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700px;
+        :focus-visible {
+          border: 0px !important;
+          outline: none;
+        }
+      }
+      span {
+        @media (max-width:991px){
+         margin-top: 10px;
+        }
+        button {
+          margin-left: 10px;
+          min-width: 80px;
+          height: 30px;
+          line-height: 30px;
+          @media (max-width:991px){
+            margin-top: 10px;
+           }
+        }
+      }
+    }
+    .stakemodel_btn {
+      display: flex;
+      width: 100%;
+      margin-top: 25px;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+.pool-wrap{
+  position: static;
+}
+.farm_card{
+  .row{
+  
+      margin-bottom: 0!important;
+      align-items: center;
+    
+  }
+}

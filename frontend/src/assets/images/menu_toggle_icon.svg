@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.556" height="21" viewBox="0 0 33.556 21">
+  <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
+    <path id="Path_47" data-name="Path 47" d="M4.5,18H24.483" fill="none" stroke="#e3d42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_48" data-name="Path 48" d="M4.5,9h27" fill="none" stroke="#e3d42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_49" data-name="Path 49" d="M4.5,27h27" fill="none" stroke="#e3d42d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M13.639,13.122l5.244-5.24a.991.991,0,0,0-1.4-1.4l-5.942,5.938a.989.989,0,0,0-.029,1.366l5.966,5.979a.991.991,0,0,0,1.4-1.4Z" transform="translate(17.381 4.876)" fill="#e3d42d"/>
+  </g>
+</svg>

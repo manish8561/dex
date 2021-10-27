@@ -1,0 +1,37 @@
+@import "../../assets/theme/_var.scss";
+
+.cardHome_style {
+  border-radius: 25px;
+  border: 1px solid $secondaryColor;
+  background: $baseColor;
+  color: $whiteColor;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-bottom: 26px;
+  .cardHome_titleStyle {
+    font-family: $secondaryFont;
+    font-weight: 400;
+    font-size: 30px;
+    @media (max-width: 1199px) {
+      font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+    &.small {
+      font-size: 23px;
+      @media (max-width: 1199px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &.mb-26 {
+    margin-bottom: 26px;
+  }
+  &.fullHeight {
+    height: 100%;
+    @media (max-width: 767px) {
+      height: auto;
+    }
+  }
+}

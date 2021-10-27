@@ -1,0 +1,216 @@
+@import "../../../assets/theme/_var.scss";
+
+.container_wrap {
+  margin-left: 236px;
+  max-width: calc(100% - 236px);
+  min-height: 1000px;
+  background: url(../../../assets/images/bg_home_new.jpg) top center no-repeat;
+  background-size: cover;
+  transition: all 0.55;
+  position: relative;
+
+  .container_inside {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media (max-width: 991px) {
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+}
+
+body.expande_container .container_wrap {
+  margin-left: 73px;
+  max-width: calc(100% - 73px);
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+.subHeader_style {
+  text-align: center;
+
+  p {
+    font-family: $baseFont;
+    font-size: 13px;
+    font-weight: 700;
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    @media (max-width: 1199px) {
+      max-width: 300px;
+    }
+    @media (max-width: 767px) {
+      max-width: 225px;
+    }
+  }
+}
+
+.announcements_cardStyle {
+  height: 100%;
+  @media (max-width: 767px) {
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.col_lottery_winning_style {
+  background: $baseColor
+    url(../../../assets/images/anchorswap-lottery-background@2x.png) no-repeat !important;
+  min-height: 400px;
+}
+.col_farm_stacking {
+  background: $baseColor url(../../../assets/images/anchor-yellow@2x.png) 95%
+    20% no-repeat !important;
+  min-height: 400px;
+  background-position: top right;
+
+  @media (max-width: 960px) {
+    margin-bottom: 25px;
+  }
+}
+.anchor_swapbtn_metamask_btn {
+  align-items: center;
+
+  .addMetamask_btn {
+    position: relative;
+    margin-left: 10px;
+    transform: scale(1);
+    transition: all 0.25s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.anchor_harvest_list {
+  font-family: $baseFont;
+  li {
+    margin-bottom: 5px;
+  }
+  .anchor_harvest_list__title {
+    font-family: inherit;
+    color: $secondaryColor;
+    font-style: 13px;
+    font-weight: 700;
+  }
+  .anchor_harvest_list__lockedTextStyle {
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.41);
+    font-style: 13px;
+    font-weight: 700;
+  }
+  .anchor_harvest_list__valueTextStyle {
+    font-family: inherit;
+    color: $secondaryColor;
+    font-style: 13px;
+    font-weight: 700;
+  }
+}
+
+.lottery_winnig_list {
+  font-family: $baseFont;
+  li {
+    margin-bottom: 5px;
+  }
+  .lottery_winnig__title {
+    font-family: inherit;
+    color: $secondaryColor;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .lottery_winnig__value {
+    font-family: inherit;
+    color: $whiteColor;
+    font-size: 27px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  .lottery_winnig__valuesmall {
+    font-family: inherit;
+    color: $secondaryColor;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.lottery_title__style {
+  margin-bottom: 120px;
+}
+
+.unloack_btn_style {
+  margin-top: 25px;
+}
+
+.list_ValueStyle {
+  li {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    span.label {
+      font-family: $baseFont;
+      font-size: 13px;
+      font-weight: 700;
+      color: $whiteColor;
+    }
+    strong.value {
+      font-family: $baseFont;
+      font-size: 13px;
+      font-weight: 700;
+      color: $whiteColor;
+    }
+  }
+}
+
+.totalValueLocked_style {
+  p {
+    color: $whiteColor;
+    font-size: 25px;
+    font-family: $secondaryFont;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    @media (max-width: 1199px) {
+      font-size: 18px;
+    }
+  }
+
+  strong {
+    color: $secondaryColor;
+    font-size: 13px;
+    font-family: $baseFont;
+    font-weight: 700;
+  }
+}
+.twitter-col{
+  iframe {
+    .timeline-Widget{
+    max-width: 1200px;
+    background-color: #1C3D5A!important;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+.timeline-Viewport {
+  scrollbar-width: none;
+}
+}
+.timeline-Viewport::-webkit-scrollbar {
+  display: none!important;
+  scrollbar-width: thin!important;
+}

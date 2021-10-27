@@ -1,0 +1,59 @@
+.roimodel{
+    max-width: 480px;
+    .modal_headerStyle__rowA_colLeft{
+        width: 100%;
+        h2{
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+    .modal_headerStyle__rowA_colRight{
+        position: absolute;
+        right: 25px;
+        top:25px;
+    }
+    .roibodyBox{
+        padding: 10px 30px 20px;
+        table{
+            width: 100%;
+            thead{
+                tr{
+                    th{
+                        font-size: 13px;
+                        line-height: 21px;
+                        color: #E3D42E;
+                        font-weight: 700;
+                        text-align: left;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 13px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: 13px;
+            line-height: 21px;
+            color: #E3D42E;
+            font-weight: 600;
+            padding: 30px 0;
+        }
+        .buttonStyle{
+            width: 272px;
+            margin: 0 auto;
+            display: block;
+            @media (max-width:767px) {
+                width: 100%;
+            }
+        }
+    }
+}

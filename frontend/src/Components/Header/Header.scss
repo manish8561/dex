@@ -1,0 +1,85 @@
+@import "../../assets/theme/_var.scss";
+
+.header_style {
+  display: flex;
+  height: 94px;
+  background: $baseColor;
+  align-items: center;
+  padding-left: 27px;
+  padding-right: 27px;
+  justify-content: space-between;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s;
+
+  &.isFixed {
+    top: -100px;
+  }
+
+  .header_left_style {
+    display: flex;
+    align-items: center;
+
+    .header_logo {
+      width: 225px;
+      height: 45px;
+      background: url(../../assets/images/logo_anchorSwap.svg) no-repeat;
+      display: flex;
+      font-family: $baseFont;
+      margin-left: 24px;
+      display: inline-block;
+      transition: all 0.25s;
+      @media (max-width: 960px) {
+        background: url(../../assets/images/logo_mobile.svg) no-repeat;
+        width: 28px;
+        height: 37px;
+      }
+    }
+    .for_mobile {
+      display: none;
+    }
+    @media (max-width: 960px) {
+      .for_desktop {
+        display: none;
+      }
+      .for_mobile {
+        display: block;
+      }
+    }
+  }
+  .header_right_style {
+    text-align: right;
+
+    a.connect__Link {
+      min-width: 158px;
+      text-align: center;
+      transition: all 0.25s;
+      @media (max-width: 767px) {
+        min-width: 110px;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+.wallet_list {
+  padding: 15px 25px;
+  width: 100%;
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #496989;
+    border-radius: 9px;
+    color: #e3d42e;
+    font-size: 13px;
+    line-height: 21px;
+    padding: 7px 28px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    border: 0px;
+  }
+}

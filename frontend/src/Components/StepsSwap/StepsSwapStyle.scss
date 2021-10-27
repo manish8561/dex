@@ -1,0 +1,47 @@
+@import "../../assets/theme/_var.scss";
+
+.stepsswap_style {
+  border-radius: 25px;
+  background: $swapStepbg;
+  display: flex;
+  margin-bottom: 45px;
+  @media (max-width: 767px) {
+  }
+
+  li {
+    flex: 1;
+
+    a {
+      display: block;
+      height: 49px;
+      text-align: center;
+      font-family: $secondaryFont;
+      font-style: 16px;
+      color: $secondaryColor;
+      text-decoration: none;
+      line-height: 49px;
+      transition: all 0.25s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &.firstStep {
+      &.isActive {
+        a {
+          border-radius: 25px;
+          background: $secondaryColor;
+          color: $baseColor;
+        }
+      }
+    }
+    &.secondStep {
+      &.isActive {
+        a {
+          border-radius: 25px;
+          background: $secondaryColor;
+          color: $baseColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.589" height="15.703" viewBox="0 0 14.589 15.703">
+  <g id="Gruppe_50" data-name="Gruppe 50" transform="translate(-715.579 -687.21)">
+    <rect id="Rechteck_21" data-name="Rechteck 21" width="2.329" height="7.861" rx="1.165" transform="translate(716.265 695.052)" fill="#e3d42d"/>
+    <rect id="Rechteck_22" data-name="Rechteck 22" width="2.329" height="9.22" rx="1.165" transform="translate(719.953 693.693)" fill="#e3d42d"/>
+    <rect id="Rechteck_23" data-name="Rechteck 23" width="2.329" height="6.899" rx="1.165" transform="translate(723.584 696.014)" fill="#e3d42d"/>
+    <rect id="Rechteck_24" data-name="Rechteck 24" width="2.329" height="10.385" rx="1.165" transform="translate(727.369 692.529)" fill="#e3d42d"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.359" cy="1.359" r="1.359" transform="translate(715.579 690.654) rotate(-29.427)" fill="#e3d42d"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.359" cy="1.359" r="1.359" transform="translate(719.196 689.132) rotate(-45)" fill="#e3d42d"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1.359" cy="1.359" r="1.359" transform="translate(722.926 692.459) rotate(-63.483)" fill="#e3d42d"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="1.359" cy="1.359" r="1.359" transform="translate(726.899 690.142) rotate(-76.717)" fill="#e3d42d"/>
+    <line id="Linie_1" data-name="Linie 1" y1="1.359" x2="2.523" transform="translate(718.109 689.132)" fill="none"/>
+    <line id="Linie_2" data-name="Linie 2" x2="3.145" y2="2.038" transform="translate(721.603 689.132)" fill="none"/>
+    <line id="Linie_3" data-name="Linie 3" x1="2.329" y2="2.038" transform="translate(725.485 689.811)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:wght@400;500;600;700&display=swap');
+@import './assets/theme/_var.scss';
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: $baseFont, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $baseColor;
+  // overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a{
+  text-decoration:none;
+}
+::-webkit-scrollbar{
+  background-color:$blueLign ;
+  width: 8px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: $secondaryColor;
+  border-radius: 5px;
+}
+ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+div{
+  box-sizing: border-box;
+}
+
+.btn{
+  font-family: $secondaryFont;
+  color:$baseColor;
+  font-size: 16px;
+  font-weight: 400;
+  background: $secondaryColor;
+  height: 42px;
+  border-radius: 25px;
+  display: inline-block;
+  line-height: 40px;
+  transition: all .25s;
+  border:1px solid $secondaryColor;
+  text-align: center;
+  min-width: 160px;
+  padding: 0;
+
+  @media (max-width: 467px) {
+    min-width: 120px;
+    font-size: 13px;
+  
+  }
+
+  &:hover{
+    background: $baseColor;
+    color:$secondaryColor;
+  }
+
+  &.full{
+    width: 100%;
+  }
+
+  &:disabled{
+    cursor: default;
+    background: $buttonDisabled;
+    color:$baseColor;
+    border-color:$buttonDisabled;
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 975px;
+  padding:0 15px;
+  margin:0 auto;
+}
+.row{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
+
+  &:not(:last-child).lessMargin_bottom{
+    margin-bottom: 5px;
+  }
+}
+.col{
+  flex:1;
+  padding-left: 12px;
+  padding-right: 12px;
+  @media(max-width:960px){
+    width: 100%;
+    flex-basis: auto;
+  }
+}
+.farmtop{
+  @media(max-width:960px){
+    width: auto !important;
+  }
+}

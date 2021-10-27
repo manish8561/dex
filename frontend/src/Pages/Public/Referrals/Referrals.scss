@@ -1,0 +1,94 @@
+.lockbox {
+  padding: 36px 24px;
+  background-color: rgb(18, 24, 39);
+  border-radius: 32px;
+  box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px,
+    rgba(25, 19, 38, 0.05) 0px 1px 1px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+  p {
+    margin-top: 25px;
+    color: #e3d32d;
+  }
+}
+.Unlockbox {
+  margin-top: 40px;
+  .UnlockboxTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .UnlockboxIn {
+      width: 48% !important;
+      @media (max-width: 767px) {
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.UnlockboxIn {
+  background-color: rgb(18, 24, 39);
+  border-radius: 32px;
+  box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px,
+    rgba(25, 19, 38, 0.05) 0px 1px 1px;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  h3 {
+    border-bottom: 1px solid #fff;
+    padding: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .copy {
+      color: #e3d32d !important;
+      border: 2px solid #e3d32d !important;
+      border-radius: 25px;
+      padding: 6px 25px;
+      width: 120px;
+    }
+  }
+  p {
+    padding: 24px;
+    color: #e3d32d !important;
+    font-weight: 600;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+  }
+  a {
+    padding: 24px;
+    color: #e3d32d !important;
+    font-weight: 600;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-align: center;
+    @media (max-width: 767px) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

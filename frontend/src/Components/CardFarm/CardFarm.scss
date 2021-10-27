@@ -1,0 +1,228 @@
+@import '../../assets/theme/_var.scss';
+
+.farm_card{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 100%;
+    margin: 5px;
+
+    .farm_card__farmCoin_style{
+        max-width: 110px;
+        position: relative; 
+        .box-icon {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            bottom:12px;
+
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .farmCoin_style__coinLeft{
+            left:23px;
+        }
+        .farmCoin_style__coinRight{
+            right: 11px;
+        }
+    }
+}
+.farm_card__coinInfo_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h2{
+        font-family: $secondaryFont;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+    .info_about_card{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+
+            &.info_about_card_feeinfo{
+                border: 2px solid $noFeedColor;
+                margin-right: 10px;
+                height: 27px;
+                min-width: 79px;
+                border-radius: 16px;
+                font-family: $baseFont;
+                color: $noFeedColor;
+                font-size: 13px;
+                box-sizing: border-box;
+
+                img{
+                    margin-right: 5px;
+                }
+            }
+            &.info_about_card_multi{
+                font-family: $baseFont;
+                font-size: 13px;
+                color: $baseColor;
+                background:$secondaryColor;
+                height: 27px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 14px;
+            }
+        }
+    }
+}
+.farm_planInfo{
+    
+     li{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-top: 1vh;
+         padding-bottom: 1vh;
+
+         strong{
+            font-family: $baseFont;
+            font-size: 13px;
+            font-weight: 700;
+         }
+     }
+}
+
+.cardFarm__earned{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    h2{
+        font-family: $baseFont;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        strong{
+            color: $secondaryColor;
+        }
+    }
+}
+.cardFarm__buttonBlock{
+    text-align: right;
+
+    .btn_cardFarm_style{
+        max-width: 85px;
+        min-width: 85px;
+        font-size: 15px;
+        height: 33px;
+        line-height: 33px;         
+    }
+    
+    .cardFarm__buttonBlock__value{
+        display: flex;
+        justify-content:flex-start ;
+        align-items: center;
+        text-align: left;
+        strong{
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+
+    .cardFarm__buttonBlock__increaseBtns{
+        display: flex;
+        justify-content: flex-end;        
+        
+        .cardFarm_increase{
+            display: flex;
+
+            li{
+                &:last-child{
+                    margin-left: 5px;
+                }
+                button{
+                    width: 40px;
+                    height: 33px;
+                    font-size: 30px;
+                    border:0px;
+                    background:$buttonDisabled;
+                    border-radius:11px;
+                    padding:0px;
+                    line-height: 33px;
+                    color: $secondaryColor;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cardFarm_details{
+    border-top: 2px solid $secondaryColor;
+    padding-top: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    a{
+        color: $secondaryColor;
+        font-family: $secondaryColor;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-left: 4px;
+        }
+    }
+    ul{
+        margin: 10px 0;
+        padding: 0;
+        li{
+            margin: 0;
+            padding: 0;
+            display: flex;  
+            justify-content: space-between;
+            font-size: 13px;
+            line-height: 21px;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+    }
+    .view{
+        text-align: left;
+        display: block !important;
+    }
+    
+}
+.staked{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .cardFarm__buttonBlock__value{
+        flex-direction: column !important;
+        align-items: flex-start;
+        p{
+            display: block;
+            text-align: left;
+        }
+    }
+}
+.farm-coin img{ 
+    filter: brightness(0.5);
+
+}
+
+span.token-icon {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}

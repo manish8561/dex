@@ -1,0 +1,677 @@
+.container_Lottery {
+  background: #121c38 url(../../../assets/images/anchorswap-bg.jpg) center top
+    no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Mitr", sans-serif !important;
+  .LoteryHeader {
+    background: #496989;
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 960px) {
+      padding: 25px 50px;
+    }
+    .LoteryHeaderLeft {
+      width: 50%;
+      h2 {
+        font-size: 37px;
+        line-height: 40px;
+        color: #e3d42e;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 15px;
+        @media (max-width: 767px) {
+          font-size: 25px;
+          line-height: 28px;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 20px;
+      }
+      @media (max-width: 960px) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+    .LoteryHeaderRight {
+      width: 50%;
+      text-align: center;
+      h2 {
+        font-size: 37px;
+        line-height: 40px;
+        color: #e3d42e;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 20px;
+        margin-top: 20px;
+        span {
+          color: #e3d42e;
+        }
+      }
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+    }
+  }
+  .LoteryPage {
+    padding-top: 60px;
+    max-width: 1050px;
+    margin: 0 auto;
+    .TopTabs {
+      display: flex;
+      justify-content: center;
+      ul {
+        background: #496989;
+        display: flex;
+        border-radius: 20px;
+        li {
+          display: flex;
+          a {
+            background: transparent;
+            color: #e3d42d;
+            font-size: 16px;
+            line-height: 23px;
+            border-radius: 20px;
+            padding: 10px 25px;
+            &:hover,
+            &.active {
+              background: #e3d42e;
+              color: #212e52;
+            }
+          }
+          button {
+            background: #212e52;
+            color: #e3d42e;
+            @media (max-width: 767px) {
+              min-width: 118px;
+              margin-right: 10px;
+            }
+          }
+          .active {
+            background: #e3d42e;
+            color: #212e52;
+          }
+        }
+      }
+    }
+  }
+  .totalPot {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .totalPotIn {
+      background: #000b29;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      border: 1px solid #e3d42d;
+      text-align: center;
+      width: 100%;
+      margin-right: 20px;
+      .tick-pr {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+      .yellow {
+        color: #e3d32d;
+      }
+      &.totalPotLeft {
+        .totalPotHead {
+          border-bottom: 0.5px solid #e3d42e;
+          padding: 20px 34px;
+          display: flex;
+          align-items: center;
+          h3 {
+            font-size: 19px;
+            line-height: 26px;
+            color: #fff;
+            text-align: left;
+            font-weight: 600;
+            padding-left: 20px;
+            span {
+              color: #e3d42d;
+              display: block;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+        .totalPotbody {
+          padding: 20px 35px;
+          ul {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            li {
+              font-size: 12px;
+              line-height: 16px;
+              color: #fff;
+              margin-bottom: 8px;
+              font-family: "Mitr", sans-serif !important;
+              &:first-child {
+                color: #e3d42d;
+              }
+              span {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+      &.tickets_box {
+        padding: 25px;
+        background: #000b29 url(../../../assets/images/ticket_bg.png) top right
+          no-repeat;
+        max-height: 175px;
+        @media (max-width: 767px) {
+          max-height: inherit;
+        }
+
+        h3 {
+          font-size: 22px;
+          line-height: 35px;
+          color: #fff;
+          font-weight: bold;
+          padding-left: 25px;
+          text-align: left !important;
+          margin: 0;
+          @media (max-width: 767px) {
+            font-size: 17px;
+            line-height: 22px;
+          }
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          li {
+            width: auto;
+            margin-right: 15px;
+            margin-top: 10px;
+            a {
+              background: #e3d42d;
+              color: #212e52;
+              font-size: 15px;
+              border-radius: 24px;
+              line-height: 20px;
+              padding: 12px 20px;
+              width: 100%;
+              display: inline-block;
+              &.noticket {
+                background: #496989;
+              }
+              @media (max-width: 767px) {
+                font-size: 14px;
+                padding: 8px 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ticket-price {
+      padding: 50px 0;
+      background: url(../../../assets/images/gift.png) no-repeat;
+      background-position: left 20px center;
+      background-size: 18%;
+    }
+  }
+  .fullBox {
+    background: #000b29;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #e3d42d;
+    text-align: center;
+    @media (max-width: 767px) {
+      padding: 0 8px;
+    }
+
+    h3 {
+      font-size: 26px;
+      line-height: 35px;
+      font-weight: 600;
+      padding: 10px 0;
+      color: #e3d42e;
+      text-align: center;
+      margin: 0;
+      border-bottom: 0.5px solid #e3d42e;
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+    .fullBoxbody {
+      text-align: center;
+      padding: 30px 0;
+      .counts {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+        li {
+          border: 1px dashed #e3d42d;
+          color: #e3d42e;
+          width: 72px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 72px;
+          font-size: 41px;
+          border-radius: 10px;
+          margin: 0 15px;
+          line-height: 54px;
+          font-weight: bold;
+          font-family: "Mitr", sans-serif !important;
+          @media (max-width: 767px) {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 12px;
+        line-height: 17px;
+      }
+      a {
+        border: 1px solid #e3d42d;
+        color: #e3d42e;
+        font-size: 15px;
+        border-radius: 20px;
+        line-height: 20px;
+        padding: 9px 35px;
+        margin-top: 35px;
+        display: inline-block;
+        font-weight: 600;
+        @media (max-width: 767px) {
+          font-size: 14px;
+          padding: 11px 15px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+.warning-modal {
+  max-width: 800px;
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #e3d32d;
+    padding: 20px;
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: url(../../../assets/images/close.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: right 30px center;
+  }
+  .buttonStyle {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.ticketpopup {
+  position: fixed;
+  // width: calc(100% - 256px);
+  width: calc(100% - 230px);
+  // height: calc(100% - 94px);
+  height: 100%;
+  background: rgba(0, 11, 41, 0.7);
+  left: 236px;
+  // top: 94px;
+  top: 0;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    left: 0;
+  }
+  .ticketpop {
+    max-width: 800px;
+    border: 1px solid #e3d42d;
+    margin: 0px auto;
+    // margin-top: 120px;
+    margin-top: 210px;
+    background: #000b29;
+    border-radius: 30px;
+    position: relative;
+    @media (max-width: 767px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    h3 {
+      font-size: 19px;
+      line-height: 26px;
+      color: #fff;
+      font-weight: 400;
+      margin: 0 !important;
+      text-align: center;
+      padding: 30px 0 20px 0;
+      border-bottom: 0.5px solid #e3d42e;
+
+      @media (max-width: 767px) {
+        font-size: 15px;
+      }
+    }
+    .close {
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: url(../../../assets/images/close.svg);
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-position: right 30px center;
+      @media (max-width: 767px) {
+        top: 20px;
+        background-position: right 20px center;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .popup_body {
+      padding: 25px 35px;
+      @media (max-width: 767px) {
+        padding: 15px 25px;
+      }
+      .amountBox {
+        background: #496989;
+        padding: 20px 28px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        @media (max-width: 467px) {
+          padding: 10px 15px;
+        }
+        .form-control {
+          background: transparent;
+          border: none;
+          color: #fff;
+          &:focus {
+            outline: none;
+          }
+
+          @media (max-width: 467px) {
+            width: 120px;
+          }
+        }
+        .btn-max {
+          margin-left: 10px;
+          min-width: 85px;
+          line-height: 38px;
+          font-size: 14px;
+          height: 40px;
+          @media (max-width: 467px) {
+            min-width: 60x;
+            font-size: 12px;
+          }
+        }
+        p {
+          font-size: 19px;
+          line-height: 26px;
+          color: #fff;
+          margin-bottom: 0;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 26px;
+          color: #e3d32d;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin: 0;
+          a {
+            font-size: 19px;
+            line-height: 28px;
+            color: #000;
+            font-weight: 400;
+            background: #e3d42e;
+            padding: 7px 25px;
+            border-radius: 20px;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .lotteryConfirm_btn {
+        padding: 0 15px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        color: #e3d42e;
+        margin-bottom: 10px;
+        &.white {
+          color: #fff;
+          line-height: 17px;
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        &.center {
+          text-align: center;
+        }
+      }
+      .spnd-txt {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+          width: 45%;
+          a {
+            background: #e3d42d;
+            color: #212e52;
+            font-size: 15px;
+            border-radius: 24px;
+            line-height: 20px;
+            padding: 12px 0px;
+            width: 100%;
+            display: inline-block;
+            &.noticket {
+              background: #496989;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.pastdraw {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  .pastdrawLeft {
+    width: 50%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .loterySearch {
+      background-color: rgb(72, 63, 59);
+      border: 0px none;
+      border-radius: 16px;
+      box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
+      color: rgb(255, 255, 255);
+      display: block;
+      font-size: 16px;
+      height: 40px;
+      outline: currentcolor none 0px;
+      padding: 0px 5px 0 15px;
+      width: 100%;
+      margin-bottom: 40px;
+      form {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        input {
+          width: 90% !important;
+          border: 0px;
+          background: transparent;
+          color: #fff;
+          height: 30px;
+        }
+        .buttonStyle {
+          height: 34px !important;
+          line-height: 34px !important;
+          min-width: 100px !important;
+        }
+      }
+    }
+  }
+  .pastdrawRight {
+    width: 48%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .lotterydrawbox {
+    background-color: rgb(18, 24, 39);
+    border-radius: 32px;
+    box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px,
+      rgba(25, 19, 38, 0.05) 0px 1px 1px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    padding: 24px;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5px 0 10px 0;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .totalnumber {
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid rgb(82, 75, 99);
+      margin-bottom: 30px !important;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        img {
+          width: 60px;
+          margin-right: 15px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            color: #e3d42d;
+          }
+        }
+      }
+    }
+  }
+}
+.totalPotbody li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewTickets {
+  position: fixed;
+  padding-bottom: 30px;
+  text-align: center;
+  .ticket-heading {
+    border-bottom: 1px solid #e3d32d;
+    padding-bottom: 15px;
+  }
+  .modal_headerStyle {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: none;
+  }
+  .modal_headerStyle__rowA .modal_headerStyle__rowA_colLeft {
+    flex-direction: column;
+    width: 100%;
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    background: url(../../../assets/images/close.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: right 30px center;
+  }
+}
+.match-table {
+  width: 100%;
+  text-align: left;
+  td {
+    padding: 10px 0;
+  }
+}
+div.lotteryChart {
+  rect:first-child {
+    fill: #121827 !important;
+  }
+}

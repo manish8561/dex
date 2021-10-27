@@ -1,0 +1,77 @@
+@import '../../assets/theme/_var.scss';
+
+.InputSelectCurrency_style{
+        background:$blueLign;
+        border-radius: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+        .labelTextStyle{
+            display: block;
+            font-family: $baseFont;
+            font-size: 13px;
+            font-weight: 700;
+            color: $whiteColor;
+            margin-bottom: 10px;
+        }
+        .right{
+            position: absolute !important;
+            right: 25px !important;
+            top: 10px !important;
+            font-size: 14px;
+        }
+        .InputSelectCurrency_style__left{
+            flex:1;         
+
+            .inputStyle, .inputStyle:focus{
+                width: 100%;
+                height: 25px;
+                font-family: $secondaryFont;
+                font-size: 16px;
+                color:$secondaryColor;
+                border:0px !important;
+                background:transparent !important; 
+                border-radius: 0px !important;
+                box-shadow: none;
+                outline: none !important;
+            }
+        }
+        .InputSelectCurrency_style__right{
+            flex:0 0 auto;
+
+            .btn_selectCurrency{
+                display: flex;
+                align-items: center;
+                border:0;
+                background:transparent;
+                cursor: pointer;
+
+                .currencyName_textStyle{
+                    font-family: $baseFont;
+                    font-size: 13px;
+                    color: $whiteColor;
+                    font-weight: 700;
+                    margin-right: 6px;
+                    margin-left: 6px;
+                }
+            }
+            img{
+                width: 20px;
+                &:last-child{
+                    width: 10px !important;
+                }
+            }
+            
+        }
+}
+.max-btn {
+    background: transparent;
+    color: #e3d42d;
+    box-shadow: unset;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
